@@ -1,0 +1,17 @@
+name: Render Ping
+
+on:
+  schedule:
+    - cron: '*/10 10-13,16-21 * * *'
+  workflow_dispatch:
+
+jobs:
+  ping-websites:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Ping websites using cURL
+        run: |
+          curl -I https://wanderlogues.onrender.com
+          curl -I https://white-water.onrender.com
+          curl -I https://white-rock.onrender.com
