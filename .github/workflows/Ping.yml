@@ -12,6 +12,4 @@ jobs:
     steps:
       - name: Ping websites using cURL
         run: |
-          curl -I https://wanderlogues.onrender.com
-          curl -I https://white-water.onrender.com
           curl -I https://white-rock.onrender.com
