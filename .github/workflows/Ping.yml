@@ -2,7 +2,7 @@ name: Render Ping
 
 on:
   schedule:
-    - cron: '*/10 10-13,16-21 * * *'
+    - cron: '*/5 11-23 * * *'
   workflow_dispatch:
 
 jobs:
@@ -13,3 +13,4 @@ jobs:
       - name: Ping websites using cURL
         run: |
           curl -I https://white-rock.onrender.com
+          curl -I https://codeseveryware.onrender.com
